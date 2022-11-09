@@ -25,12 +25,12 @@ console.log(min);
 let maxValue = 49;
 let minValue = 0;
 
-myArray.push(maxValue);
+myArray.push(minValue);
 
 myArray.length;
 console.log(myArray);
 console.log(myArray.length);
 
-myArray.unshift(minValue);
+myArray.unshift(maxValue);
 console.log(myArray);
 console.log(myArray.length);
