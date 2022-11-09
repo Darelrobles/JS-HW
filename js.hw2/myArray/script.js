@@ -22,8 +22,8 @@ for (let i = 1; i < myArray.length; ++i) {
 
 console.log(min);
 
-const maxValue = 49;
-const minValue = 0;
+let maxValue = 49;
+let minValue = 0;
 
 myArray.push(maxValue);
 
