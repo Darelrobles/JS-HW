@@ -5,7 +5,7 @@ myArray.length;
 console.log(myArray.length);
 
 let max = myArray[0];
-for (let i = 1; i < myArray.length; ++i) {
+for (let i = 1; i < myArray.length; i++) {
   if (myArray[i] > max) {
     max = myArray[i];
   }
@@ -14,7 +14,7 @@ for (let i = 1; i < myArray.length; ++i) {
 console.log(max);
 
 let min = myArray[0];
-for (let i = 1; i < myArray.length; ++i) {
+for (let i = 1; i < myArray.length; i++) {
   if (myArray[i] < min) {
     min = myArray[i];
   }
