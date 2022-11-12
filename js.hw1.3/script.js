@@ -1,11 +1,5 @@
-const img1 =
-  "https://fbc.ua/wp-content/uploads/2021/07/ledenaya_antarktida.jpg";
-const img2 =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Fryxellsee_Opt.jpg/1280px-Fryxellsee_Opt.jpg";
-const img3 =
-  "https://publish.com.ua/images/2020/11/29/12063_odinokiy-pingvin_large.jpg";
-
-var currentImgName = "Gate";
+const imgs = ["https://fbc.ua/wp-content/uploads/2021/07/ledenaya_antarktida.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Fryxellsee_Opt.jpg/1280px-Fryxellsee_Opt.jpg", "https://publish.com.ua/images/2020/11/292063_odinokiy-pingvin_large.jpg"
+];
 
 function changeImg(imgName) {
   const mainImgE1 = document.getElementById("main-img");
