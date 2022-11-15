@@ -33,11 +33,11 @@ function goPrev() {
 }
 
 function allDots(){
-  const dotsEl = document.getElementById('dot-list');
+  const dotsEl = document.getElementById('dots');
 
   let dotHtml = '';
   for (let i = 0; i < imgs.lendth; i = i + 1){
     dotHtml = '<button class="dot-btn" onclick="changeImg(${i})"></button>';
-    
+    dotsEl.innerHTML += dotHtml;
   }
 }
