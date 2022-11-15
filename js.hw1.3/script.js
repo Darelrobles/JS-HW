@@ -31,3 +31,13 @@ function goPrev() {
   }
   changeImg(curIndex);
 }
+
+function allDots(){
+  const dotsEl = document.getElementById('dot-list');
+
+  let dotHtml = '';
+  for (let i = 0; i < imgs.lendth; i = i + 1){
+    dotHtml = '<button class="dot-btn" onclick="changeImg(${i})"></button>';
+    
+  }
+}
