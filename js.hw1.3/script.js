@@ -37,7 +37,7 @@ function allDots(){
 
   let dotHtml = '';
   for (let i = 0; i < imgs.lendth; i = i + 1){
-    dotHtml = '<button class="dot-btn" onclick="changeImg(${i})"></button>';
+    dotHtml = '<button class=dot-btn onclick=changeImg(${i})></button>';
     dotsEl.innerHTML += dotHtml;
   }
 }
