@@ -70,6 +70,12 @@ console.log(calc(5,6,"+"));
 
 console.log(calc(2,5,"**"));
 
+console.log(calc(9,8,"-"));
+
+console.log(calc(85,7,"/"));
+
+console.log(calc(9,9,"*"));
+
 
 // const array = [
 //   1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 22, 33, 44, 55, 66, 77, 88, 99, 100,
