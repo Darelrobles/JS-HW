@@ -78,16 +78,45 @@ const age = 25;
 const weight = 90;
 const height = 190;
 
+
+
 function whoAreYou(age, weight, height) {
   let res;
-  if (age < 25) {
+  // if (typeof age === 'number') {
+  //   res = 'value is a number';
+  // } else {
+  //   res = 'value is NOT a number';
+  // } 
+  // if (typeof weight === 'number') {
+  //   res = 'value is a number';
+  // } else {
+  //   res = 'value is NOT a number';
+  // } 
+  // if (typeof height === 'number') {
+  //   res = 'value is a number';
+  // } else{
+  //   res = 'value is NOT a number';
+  // }
+  if (age === 0) {
+    res = "wrong symbol, use numbers";
+  } else if (typeof age === 'string') {
+    res = "use numbers";
+  } else if (age < 25) {
     res = "You are too young";
-  } else if (age > 35) {
+  } else if (age > 25) {
     res = "You are too old";
+  }  else if (typeof weight === 'string') {
+    res = "use numbers";
+  }else if (weight === 0) {
+    res = "wrong symbol, use numbers";
   } else if (weight < 90) {
     res = "You are too slim";
   } else if (weight > 90) {
     res = "You are too fat";
+  } else if (typeof height === 'string') {
+    res = "use numbers";
+  } else if (height === 0) {
+    res = "wrong symbol, use numbers";
   } else if (height < 190) {
     res = "You are too short";
   } else if (height > 190) {
@@ -98,21 +127,30 @@ function whoAreYou(age, weight, height) {
   return res;
 }
 
+console.log(whoAreYou(25, 98, 190));
+console.log(whoAreYou(25, 90, 192));
+console.log(whoAreYou(15, 90, 190));
+console.log(whoAreYou(0, 90, 190));
+console.log(whoAreYou(25, 0, 0));
+console.log(whoAreYou(25, 90, 0));
+console.log(whoAreYou("a;sdf", 90, "0"));
+console.log(whoAreYou(25, 90, "0"));
+console.log(whoAreYou(25, "oleh", "0"));
 console.log(whoAreYou(25, 90, 190));
 
-const name = "Nicholas";
-console.log("Hello " + name);
-if (name.length > 7) {
-  console.log("wow, you have a REALLY long name");
-}
+// const name = "Nicholas";
+// console.log("Hello " + name);
+// if (name.length > 7) {
+//   console.log("wow, you have a REALLY long name");
+// }
 
-const name1 = "Aaron";
-console.log("Hello " + name1);
-if (name1.length > 7) {
-  console.log("wow, you have a REALLY long name");
-} else {
-  console.log("Wow, you have a REALLY nice name");
-}
+// const name1 = "Aaron";
+// console.log("Hello " + name1);
+// if (name1.length > 7) {
+//   console.log("wow, you have a REALLY long name");
+// } else {
+//   console.log("Wow, you have a REALLY nice name");
+// }
 
 // function calc(a, b, op) {
 //   let res;
