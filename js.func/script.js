@@ -98,7 +98,7 @@ function whoAreYou(age, weight, height) {
   //   res = 'value is NOT a number';
   // }
   if (age === 0) {
-    res = "wrong symbol, use numbers";
+    res = "wrong symbol";
   } else if (typeof age === 'string') {
     res = "use numbers";
   } else if (age < 25) {
@@ -108,7 +108,7 @@ function whoAreYou(age, weight, height) {
   }  else if (typeof weight === 'string') {
     res = "use numbers";
   }else if (weight === 0) {
-    res = "wrong symbol, use numbers";
+    res = "wrong symbol";
   } else if (weight < 90) {
     res = "You are too slim";
   } else if (weight > 90) {
@@ -116,7 +116,7 @@ function whoAreYou(age, weight, height) {
   } else if (typeof height === 'string') {
     res = "use numbers";
   } else if (height === 0) {
-    res = "wrong symbol, use numbers";
+    res = "wrong symbol";
   } else if (height < 190) {
     res = "You are too short";
   } else if (height > 190) {
