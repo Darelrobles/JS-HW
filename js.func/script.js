@@ -137,6 +137,9 @@ console.log(whoAreYou("a;sdf", 90, "0"));
 console.log(whoAreYou(25, 90, "0"));
 console.log(whoAreYou(25, "oleh", "0"));
 console.log(whoAreYou(25, 90, 190));
+console.log(whoAreYou(25, -1, -1));
+console.log(whoAreYou(25, 90, -1));
+console.log(whoAreYou(-1, 90, 190));
 
 // const name = "Nicholas";
 // console.log("Hello " + name);
