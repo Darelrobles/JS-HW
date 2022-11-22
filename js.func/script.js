@@ -82,21 +82,7 @@ const height = 190;
 
 function whoAreYou(age, weight, height) {
   let res;
-  // if (typeof age === 'number') {
-  //   res = 'value is a number';
-  // } else {
-  //   res = 'value is NOT a number';
-  // } 
-  // if (typeof weight === 'number') {
-  //   res = 'value is a number';
-  // } else {
-  //   res = 'value is NOT a number';
-  // } 
-  // if (typeof height === 'number') {
-  //   res = 'value is a number';
-  // } else{
-  //   res = 'value is NOT a number';
-  // }
+
   if (age < 1) {
     res = "wrong symbol";
   } else if (typeof age === 'string') {
