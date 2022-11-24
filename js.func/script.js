@@ -1,8 +1,19 @@
+let a = 15;
+let b = 32;
+
+function sumPlus(a, b) {
+  const mySum = a + b;
+  return mySum;
+}
+
+const sum1 = sumPlus(a, b);
+
+console.log(sum1);
 const age = 25;
 const weight = 90;
 const height = 190;
 
-
+/*------------*/
 
 function whoAreYou(age, weight, height) {
   let res;
@@ -15,9 +26,9 @@ function whoAreYou(age, weight, height) {
     res = "You are too young";
   } else if (age > 25) {
     res = "You are too old";
-  }  else if (!Number.isInteger(weight)) {
+  } else if (!Number.isInteger(weight)) {
     res = "it is not a number";
-  }else if (weight < 1) {
+  } else if (weight < 1) {
     res = "wrong symbol";
   } else if (weight < 90) {
     res = "You are too slim";
