@@ -9,9 +9,9 @@ function sumPlus(a, b) {
 const sum1 = sumPlus(a, b);
 
 console.log(sum1);
-const age = 25;
-const weight = 90;
-const height = 190;
+let age = 18-60;
+let weight = 50-120;
+let height = 160-210;
 
 /*------------*/
 
@@ -19,36 +19,24 @@ function whoAreYou(age, weight, height) {
   let res;
 
   if (!Number.isInteger(age)) {
-    res = "it is not a number";
-  } else if (age < 1) {
-    res = "wrong symbol";
-  } else if (age < 25) {
-    res = "You are too young";
-  } else if (age > 25) {
-    res = "You are too old";
+    res = "oops!!! wrong symbol";
+  } else if (age < 18 || age > 60) {
+    res = "you must be from 18 to 60 years old";
   } else if (!Number.isInteger(weight)) {
-    res = "it is not a number";
-  } else if (weight < 1) {
-    res = "wrong symbol";
-  } else if (weight < 90) {
-    res = "You are too slim";
-  } else if (weight > 90) {
-    res = "You are too fat";
+    res = "oops!!! wrong symbol";
+  } else if (weight < 50 || weight > 120) {
+    res = "you must have from 50 to 120 kg";
   } else if (!Number.isInteger(height)) {
-    res = "it is not a number";
-  } else if (height < 1) {
-    res = "wrong symbol";
-  } else if (height < 190) {
-    res = "You are too short";
-  } else if (height > 190) {
-    res = "You are too big";
+    res = "oops!!! wrong symbol";
+  } else if (height < 160 || height > 210) {
+    res = "soory. we need only from 160cm to 210cm high people";
   } else {
     res = "You are perfect";
   }
   return res;
 }
 
-console.log(whoAreYou(25, 98, 190));
+console.log(whoAreYou(17, 49, 159));
 console.log(whoAreYou(25, 90, 192));
 console.log(whoAreYou(15, 90, 190));
 console.log(whoAreYou(0, 90, 190));
