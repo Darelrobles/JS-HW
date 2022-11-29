@@ -9,9 +9,6 @@ function sumPlus(a, b) {
 const sum1 = sumPlus(a, b);
 
 console.log(sum1);
-let age = 18-60;
-let weight = 50-120;
-let height = 160-210;
 
 /*------------*/
 
@@ -25,11 +22,11 @@ function whoAreYou(age, weight, height) {
   } else if (!Number.isInteger(weight)) {
     res = "oops!!! wrong symbol";
   } else if (weight < 50 || weight > 120) {
-    res = "you must have from 50 to 120 kg";
+    res = "your age is ok, but you must have from 50 to 120 kg";
   } else if (!Number.isInteger(height)) {
     res = "oops!!! wrong symbol";
   } else if (height < 160 || height > 210) {
-    res = "soory. we need only from 160cm to 210cm high people";
+    res = "your age and weight is ok, but soory. we need only from 160cm to 210cm high people";
   } else {
     res = "You are perfect";
   }
