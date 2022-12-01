@@ -15,18 +15,15 @@ console.log(sum1);
 function whoAreYou(age, weight, height) {
   let res;
 
-  if (!Number.isInteger(age)) {
-    res = "oops!!! wrong symbol";
+
+  if (!Number.isInteger(age) || !Number.isInteger(weight) || !Number.isInteger(height)) {
+    res = "oops!!! pls, use onlu numbers. age or weight or height wrong symbol";
   } else if (age < 18 || age > 60) {
-    res = "you must be from 18 to 60 years old";
-  } else if (!Number.isInteger(weight)) {
-    res = "oops!!! wrong symbol";
+    res = "check your age. must be rfom 18 to 60"
   } else if (weight < 50 || weight > 120) {
-    res = "your age is ok, but you must have from 50 to 120 kg";
-  } else if (!Number.isInteger(height)) {
-    res = "oops!!! wrong symbol";
+    res = "you must have from 50 to 120 kg";
   } else if (height < 160 || height > 210) {
-    res = "your age and weight is ok, but soory. we need only from 160cm to 210cm high people";
+    res = "we need only from 160cm to 210cm high people";
   } else {
     res = "You are perfect";
   }
@@ -39,7 +36,7 @@ console.log(whoAreYou(15, 90, 190));
 console.log(whoAreYou(0, 90, 190));
 console.log(whoAreYou(25, 0, 0));
 console.log(whoAreYou(25, 90, 0));
-console.log(whoAreYou("a;sdf", 90, "0"));
+console.log(whoAreYou(0, 94, 195));
 console.log(whoAreYou(25, 90, "0"));
 console.log(whoAreYou(25, "oleh", "0"));
 console.log(whoAreYou(25, 90, 190));
